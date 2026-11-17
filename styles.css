@@ -1,0 +1,26 @@
+* {
+    background-color: rgb(33, 33, 33);
+    margin: 0;
+}
+
+header {
+    margin: 0;
+    height: 5dvh;
+    width: 100dvw;
+    background-color: rgb(69, 163, 102)
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(69, 163, 102);
+    font-size: 2.5dvh;
+    height: 5dvh;
+}
+
+#i-to-e {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibeniacha Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <p1 id="title">Ibeniacha Translator</p1>
+    </header>
+
+    <div id="i-to-e">
+        <h1>Ibeniacha To English</h1>
+        <input type="text" id="i_input" name="i_input" placeholder="Enter Ibeniacha Word">
+        <h2 id="output">Output</h2>
+    </div>
+    <script>
+        const textBox = document.getElementById("i_input");
+        const output = document.getElementById("output");
+
+        textBox.addEventListener("input", function() {
+            if (textBox.value.trim().toLowerCase() === "was") {
+                output.textContent = "What"
+            }
+            else {
+                output.textContent = "Unrecognized"
+            }
+        });
+    </script>
+</body>
+</html>
