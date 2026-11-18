@@ -17,14 +17,55 @@
         <h2 id="output">Output</h2>
     </div>
     <script>
-        const textBox = document.getElementById("i_input");
-        const output = document.getElementById("output");
+        const textBox = document.getElementById("i_input")
+        const output = document.getElementById("output")
+
+        const dictionary = {
+            "was": "What",
+            "ja": "Yes",
+            "jco": "No",
+            "jasc": "Maybe",
+            "jasi": "Maybe",
+            "zas'": "The",
+            "mamusk": "Mother",
+            "papusc": "Father",
+            "bin'": "And",
+            "vi": "So",
+            "vajn'": "Either",
+            "sovn": "Or",
+            "cazs": "Do",
+            "cazs'et": "Don't",
+            "ya'": "You",
+            "tu'o": "I / Me",
+            "dvurlet": "Turtle",
+            "wofenma": "Dog",
+            "miavenma": "Cat",
+            "zdeven": "Idea",
+            "davir": "Now",
+            "dav'": "Now",
+            "vbin": "To",
+            "v'": "To",
+            "dofze": "Easy",
+            "dafzen": "Hard",
+            "hiall'e": "Hello",
+            "janz": "Want",
+            "nvet": "But",
+            "k'xovi": "Know",
+            "sket": "Was",
+            "mv'ta": "Too",
+            "chet'nab": "That",
+            "vet'n": "Are",
+            "p'risnov": "Problem"
+        }
 
         textBox.addEventListener("input", function() {
-            if (textBox.value.trim().toLowerCase() === "was") {
-                output.textContent = "What"
-            }
-            else {
+            const word = textBox.value.trim().toLowerCase()
+
+            if(word === "") {
+                output.textContent = "Output"
+            } else if(dictionary[word]) {
+                output.textContent = dictionary[word]
+            } else {
                 output.textContent = "Unrecognized"
             }
         });
